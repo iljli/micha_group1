@@ -87,3 +87,85 @@
     border-left: 2px solid lightgray;
     border-right: 2px solid lightgray;
 }
+
+.feedback_container {
+    display: flex;
+    height: 500px;
+    padding: 0;
+    margin: 0px 90px 0px 90px;
+}
+
+.feedback_block {
+    /* border: 1px solid red; */
+    justify-content: center;
+    width: 50%;
+    min-width: 400px;
+}
+
+.clients_block {
+    /* border: 1px solid blue; */
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    min-width: 500px;
+}
+
+.feedback_block p,
+.clients_block p {
+    text-transform: uppercase;
+
+}
+
+.clients_logos {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+
+}
+
+.feedback_container .clients_block .clients_logos_row img {
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 20px;
+    width: 180px;
+}
+
+/* .feedback_container {
+    border: 1px solid green;
+    
+} */
+
+.feedback {
+    border: 2px solid lightgray;
+    width: 90%;
+    padding: 4px 4px;
+    margin: 4px 0px;
+    display: flex;
+}
+
+.feedback label {
+    /* border: 1px solid blue; */
+    position: relative;
+    left: -0px;
+    padding: 4px 4px;
+    white-space: nowrap;
+}
+
+.feedback input,
+.feedback textarea {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: 4px;
+    border: none;
+}
+
+.feedback textarea {
+    display: flex;
+    justify-content: stretch;
+    border: none;
+}
