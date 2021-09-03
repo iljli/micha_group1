@@ -1,32 +1,26 @@
 * {
     box-sizing: border-box;
     /* border: 1px solid red; */
-
 }
 
 .video {
+    display: flex;
     color: white;
     background-image: url(pictures/bgk-middle.png);
     height: 550px;
-    width: 100%;
-}
-
-.video p {
-    position: relative;
-    left: 50%;
-    top: 50%;
-}
-
-#video_button {
-    height: 550px;
-    position: relative;
-    top: 50%;
-    left: 50%;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
 }
 
 .icon_offering {
     height: 50px;
     filter: grayscale(100%);
+}
+
+.icon_offering:hover {
+    height: 50px;
+    filter: grayscale(0);
 }
 
 .expertise .textfield {
@@ -44,10 +38,11 @@
     display: flex;
     height: 300px;
     padding: 0;
-    margin: 0px 90px 0px 90px;
+    justify-content: center;
 }
 
 .grid-item {
+    /* border: 1px solid red; */
     background-color: rgba(255, 255, 255, 0.8);
     border: 0;
     text-align: center;
@@ -55,9 +50,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 300px;
+    width: 300px;
+    width: noscale;
 }
-
 
 .text_offering {
     display: flex;
@@ -89,28 +84,30 @@
 }
 
 .feedback_container {
+    /* border: 1px solid blue; */
     display: flex;
     height: 500px;
     padding: 0;
     margin: 0px 90px 0px 90px;
+    justify-content: center;
+    /* min-width: 800px; */
 }
 
 .feedback_block {
     /* border: 1px solid red; */
     justify-content: center;
-    width: 50%;
-    min-width: 400px;
+    width: 400px;
+    /* min-width: 200px; */
 }
 
 .clients_block {
     /* border: 1px solid blue; */
     justify-content: center;
-    width: 50%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* align-items: center; */
-    min-width: 500px;
+    /* min-width: 200px; */
 }
 
 .feedback_block p,
@@ -120,30 +117,28 @@
 }
 
 .clients_logos {
+    /* border: 1px solid green; */
     display: flex;
     justify-content: space-evenly;
-    /* border: 1px solid green; */
 
 }
 
 .feedback_container .clients_block .clients_logos_row img {
-    display: flex;
     /* border: 1px solid red; */
+    display: flex;
     padding: 20px;
     width: 180px;
 }
 
-/* .feedback_container {
-    border: 1px solid green;
-    
-} */
 
 .feedback {
+    /* border: 1px solid red; */
     border: 2px solid lightgray;
-    width: 90%;
+    width: 95%;
     padding: 4px 4px;
-    margin: 4px 0px;
+    margin: 0px 0px 0px 0px;
     display: flex;
+    justify-content: flex-start;
 }
 
 .feedback label {
@@ -156,9 +151,8 @@
 
 .feedback input,
 .feedback textarea {
-    /* border: 1px solid red; */
+    /* border: 1px solid green; */
     display: flex;
-    justify-content: flex-end;
     width: 100%;
     margin-left: 4px;
     border: none;
