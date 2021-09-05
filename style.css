@@ -7,6 +7,7 @@
     display: flex;
     color: white;
     background-image: url(pictures/bgk-middle.png);
+    background-size: cover;
     height: 550px;
     justify-content: center;
     flex-direction: column;
